@@ -1,0 +1,149 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+*,
+::after,
+::before{
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ts-wrapper {
+    position: relative;
+}
+
+.ts-wrapper,
+body {
+    min-height: 100%;
+}
+.about-section{
+    background-color: var(--color-fondo);
+}
+.inicio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #279991;
+
+}
+.acerca{
+    color: var(--color-fondo);
+}
+.inicio h1{
+    font-size:50px;
+    color: #fdf3a7;
+    margin-bottom: 25px;
+    position: relative;
+}
+.inicio h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fdf3a7;
+
+}
+.inicio p{
+   font-size:  18px;
+   color: brown; 
+   margin-bottom:35px ;
+}
+.container-nosotros{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #F7F9FD;
+}
+.about{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 15%;
+}
+.about-image{
+    padding-left: 20%;
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.contenido{
+    flex: 1;
+}
+.contenido h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #279991;
+}
+.contenido p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444A47;
+}
+
+.container2{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #279991;
+}
+.about2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 16%;
+}
+.about-image2{
+    flex: 1;
+    margin-left: 40px;
+    overflow: hidden;
+    padding-right: 18%;
+}
+.about-image2 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image2:hover img{
+    transform: scale(1.2);
+}
+.contenido2{
+    flex: 1;
+}
+.contenido2 h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #fdf3a7;
+}
+.contenido2 p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#F7F9FD ;
+}
+

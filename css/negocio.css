@@ -1,0 +1,132 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+*,
+::after,
+::before{
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ts-wrapper {
+    position: relative;
+}
+
+.ts-wrapper,
+body {
+    min-height: 100%;
+}
+.titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #279991;
+    padding-top: 100px;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    color: #fdf3a7;
+    margin-bottom: 25px;
+    position: relative;
+}
+.saber{
+    color: var(--color-fondo);
+}
+
+.container-negocio-info{
+    width: 100%;
+    margin: 0;
+    padding: 0px 50px 0px 0px;
+    background-color: #279991;
+    padding-bottom: 200px;
+}
+
+.about-negocio-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image-negocio-info {
+    flex: 1;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    overflow: hidden;
+    height: 620px;
+    width: 50%;
+}
+
+.about-image-negocio-info img {
+    padding: 0 40% 0 0;
+    height: 620px;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image-negocio-info:hover img {
+    transform: scale(1.1);
+}
+
+.contenido-negocio-info {
+    flex: 1;
+    margin-bottom: 150px;
+    width: 50%;
+    padding: 0 0 0 150px;
+}
+.pararfo-negocio-info{
+    padding-left: 20%;
+}
+.parrafo {
+    display: none;
+}
+.parrafo-dentro{
+    margin-top: 30px;
+}
+.show {
+    display: block;
+}
+
+.lista-negocio-info {
+    margin: 50px 0;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: left;
+    color: aliceblue;
+}
+.listado{
+    margin: 113px 155px;
+}
+.listado p{
+    font-size: 15px;
+    text-align: left;
+}
+.fa-solid {
+    background-color:#279991;
+    color:#fdf3a7;
+    
+}
+.leermas_btn{
+    background-color: #279991;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size:18px;
+   
+}
+

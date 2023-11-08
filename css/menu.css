@@ -1,0 +1,449 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+.search-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 50px;
+    border: none;
+    background-color: var(--color-fondo);
+}
+.search-form > img {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin: 10px 4px 10px 0px;
+}
+.search-bar{
+    border: none;
+    position: relative;
+}
+.search-bar input{
+    border: none;
+    background-color: var(--color-fondo);
+    height: 40px;
+    width: 590px;
+}
+.search-button{
+    position: absolute;
+    margin: 10px 0px 10px 32%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Productos destacados ***************************************************** */
+.ts-page-block {
+    position: relative;
+    padding: 60px 0px;
+}
+
+.header-title {
+    margin-bottom: 50px;
+}
+
+.header-title h1 {
+    color: var(--color-negro);
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.header-title h1::after {
+    content: '';
+    width: 76px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 3px;
+
+}
+.ts-tabs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.ts-tabs .ts-tab-link {
+    margin: 0px 20px;
+    background: #fff;
+    border: 1px solid #EEF5F9;
+    padding: 10px 30px;
+    border-radius: 22px;
+    color: #7C807E;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ts-tabs .ts-tab-link.active,
+.ts-tabs .ts-tab-link:hover {
+    background: var(--color-principal);
+    color: #fff;
+}
+
+.ts-tabs .ts-tab-link.active .tabs-content {
+    background: red;
+}
+
+/* CONTENIDO TABs */
+
+.tabs-content {
+    display: none;
+    padding-top: 50px;
+}
+
+.tabs-content.tab-active {
+    display: block;
+}
+
+.grid-product .product-item {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #EEF5F9;
+    border-radius: 5px;
+
+}
+
+.grid-product .product-item:hover {
+    /* box-shadow: 0px 8px 24px rgba(174,172,243,40%); */
+    box-shadow: 0px 8px 24px rgba(220, 229, 245, 63%);
+}
+
+
+.grid-product .product-item .p-portada {
+    width: 100%;
+    height: 175px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-product .product-item .p-portada .stin {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: var(--color-fondo);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+
+.grid-product .product-item .p-portada .stin.stin-new {
+    background: transparent;
+    color: #fff;
+}
+
+.grid-product .product-item .p-portada .stin-disponible {
+    background: #D4AF37;
+    color: var(--color-fondo);
+}
+
+.stin-disponible {
+    position: absolute;
+    left: 12px;
+    bottom: 125px;
+    background: var(--color-fondo);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.grid-product .product-item .p-info {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 265px);
+}
+
+.grid-product .product-item .p-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-negro);
+    line-height: 26px;
+    margin-bottom: -15px;
+}
+
+.grid-product .product-item .p-info .precio {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 125px;
+}
+
+.grid-product .product-item .p-info .precio span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-negro);
+
+}
+
+.grid-product .product-item .p-info .precio span.thash {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #A7A7A7;
+    text-decoration: line-through;
+}
+
+.grid-product .product-item .p-info .ts-btn {
+    width: 100%;
+}
+
+.texto-marca {
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 40%);
+    font-size: 17px;
+    padding: 10px 10px;
+    font-family: Bebas Neue Regular;
+    border-radius: 15px;
+}
+
+.tiempo-recogida {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-negro);
+    line-height: 35px;
+    margin-bottom: -5px;
+    top: 5px;
+}
+
+.valoracion {
+    position: relative;
+    font-size: 22px;
+    top: 62px;
+    color: goldenrod;
+}
+
+.nValoracion {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-negro);
+    line-height: 26px;
+    position: relative;
+    left: 35px;
+    top: 33px;
+}
+
+/* ----------------------- Menú - RESTAURANTES ------------------------------*/
+.restaurantes-space{
+    padding-left: 20%;
+    background-color: var(--color-fondo);
+}
+.title-restaurantes-menu {
+    margin-bottom: 50px;
+}
+
+.title-restaurantes-menu h2{
+    color: var(--color-negro);
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+.title-restaurantes-menu h2::after {
+    content: '';
+    width: 250px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    transform: translateX(-90%);
+    position: absolute;
+    border-radius: 3px;
+    margin-right: 900px;
+}
+
+.iconos-restaurantes{
+    display: flex;
+    flex-direction: row;
+}
+.restaurantes-menu-item1 img{
+    width: 100px;
+    height: 100px;
+}
+.restaurantes-menu-item img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+.restaurantes-menu-item1 img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.restaurantes-menu-item img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.need-border img{
+    border-radius: 50px;
+}
+.restaurant-info{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.restaurant-info1{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* ----------------------- Menú - SUPERMERCADOS ------------------------------*/
+.supermercados-space{
+    margin-top: 100px;
+    padding-left: 20%;
+    background-color: var(--color-fondo);
+}
+.title-supermercados-menu {
+    margin-bottom: 50px;
+}
+
+.title-supermercados-menu h2{
+    color: var(--color-negro);
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+.title-supermercados-menu h2::after {
+    content: '';
+    width: 300px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    transform: translateX(-89%);
+    position: absolute;
+    border-radius: 3px;
+    margin-right: 900px;
+}
+
+.iconos-supermercados{
+    display: flex;
+    flex-direction: row;
+}
+.supermercados-menu-item1 img{
+    width: 100px;
+    height: 100px;
+}
+.supermercados-menu-item img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+.supermercados-menu-item1 img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.supermercados-menu-item img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.need-border img{
+    border-radius: 50px;
+}
+.restaurant-info{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.restaurant-info1{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* ----------------------- Menú - PANADERIAS ------------------------------*/
+.panaderias-space{
+    margin-top: 100px;
+    padding-left: 20%;
+    background-color: var(--color-fondo);
+}
+.title-panaderias-menu {
+    margin-bottom: 50px;
+}
+
+.title-panaderias-menu h2{
+    color: var(--color-negro);
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+.title-panaderias-menu h2::after {
+    content: '';
+    width: 250px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    transform: translateX(-76%);
+    position: absolute;
+    border-radius: 3px;
+    margin-right: 900px;
+}
+
+.iconos-panaderias{
+    display: flex;
+    flex-direction: row;
+}
+.panaderias-menu-item1 img{
+    width: 100px;
+    height: 100px;
+}
+.panaderias-menu-item img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+.panaderias-menu-item1 img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.panaderias-menu-item img:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in;
+}
+.need-border img{
+    border-radius: 50px;
+}
+.restaurant-info{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.restaurant-info1{
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}

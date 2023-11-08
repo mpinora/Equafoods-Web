@@ -1,0 +1,93 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+.search-form > img {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 50px;
+    pointer-events: none;
+}
+/*********************** Exito *************************/
+
+.container-info-negociosuper{
+    padding-left: 21%;
+    padding-right: 21%;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: row;
+}
+.img-info-negociosuper{
+    width: 60%;
+    
+}
+.content-info-negociosuper{
+    background-color: var(--color-fondo);
+    width: 40%;
+    padding: 5%;
+}
+.iconos-negociosuper img{
+    width: 20px;
+    height: 20px;
+}
+.titulo-negociosuper{
+    font-size: 32px
+}
+.header-title-disponibles {
+    margin-bottom: 50px;
+}
+
+.header-title-disponibles h1 {
+    color: var(--color-negro);
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.header-title-disponibles h1::after {
+    content: '';
+    width: 76px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 3px;
+
+}
+
+.header-title-agotados {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.header-title-agotados h1 {
+    color: var(--color-negro);
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.header-title-agotados h1::after {
+    content: '';
+    width: 76px;
+    height: 5px;
+    background: var(--color-principal);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 3px;
+
+}
