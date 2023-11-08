@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> información Negocio | EquaFoods </title>
+    <link rel="icon" type="image/x-icon" href="img\icono-ventana.png">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bebas Neue Regular (GOOGLE FONTS) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Freehandwght@200;300;400;500;600;700;800&family=Lobster&display=swap">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://kit.fontawesome.com/f934801982.js" crossorigin="anonymous"></script>
+
+    <!-- Line Awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/negocio.css">
+
+
+</head>
+
+<body>
+
+    <div class="ts-wrapper">
+
+        <!-- ================================= HEADER MENU ================================== -->
+        <div class="ts-header">
+
+            <div class="container">
+                <div class="header-menu">
+
+                    <div class="ts-logo">
+                        <a href="index.html">
+                            <img src="img/logo-equafods.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="ts-menu">
+                        <ul class="navbar-nav">
+                            <li><a href="#">Descarga la APP</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="menu.html" class="nav-link">Menu</a>
+                            </li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                        </ul>
+
+
+                        <div class="ts-icon-cart">
+                            <a onclick="irAlCarrito()">
+                                <i class="las la-shopping-cart"></i>
+                                <span id="cantidad-productos">0</span>
+                            </a>
+                        </div>
+
+                        <div class="icon-user">
+                            <a href="login.html">
+                                <i class="las la-user"></i>
+                            </a>
+                            <a href="negocio">
+                                <i class="las la-store-alt"></i>
+                            </a>
+                        </div>
+
+                        <!-- ================================== DESPLEGABLE HEADER MENU MOVIL ================================== -->
+                        <div class="icon-menu">
+                            <button type="button"><i class="fas fa-bars"></i></button>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================================= HEADER MENU Movil ================================== -->
+        <div class="header-menu-movil">
+            <button class="cerrar-menu"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="#">Descarga la App</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+
+        <!-- ================================= Negocio ================================== -->
+        <div class="about-section-info-negocio">
+            <div class="titulo">
+                <h1><span class="saber">QUÉ </span>DEBES SABER</h1>
+            </div>
+            <div class="container-negocio-info">
+                <section class="about-negocio-info">
+                    <div class="contenido-negocio-info">
+                        <ul class="listado">
+                            <li class="lista-negocio-info">
+                                <div class="pararfo-negocio-info">¿Comó beneficiara esto en mi negocio?
+                                    <span class="parrafo" id="parrafoTex1">
+                                        <p class="parrafo-dentro">La plataforma EquaFoods te permitirá reducir el
+                                            desperdicio de alimentos y
+                                            recuperar parte del dinero invertido en productos que terminarían en la
+                                            basura.
+                                            Además, el 76 % de los usuarios que descubren un establecimiento a través de
+                                            EquaFoods acaban convirtiéndose en clientes reales.</p>
+                                    </span>
+                                    <button class="leermas_btn" id="parrafoTex_btn1"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li class="lista-negocio-info">
+                                <div class="pararfo-negocio-info">¿Cúanto trabajo supondra esto para mi negocio?
+                                    <span class="parrafo" id="parrafoTex2">
+                                        <p class="parrafo-dentro">Casi el mismo que tirar comida a la basura. Lo único
+                                            que tendrás que hacer es
+                                            guardar los productos que te hayan sobrado y estén en buen estado. A la hora
+                                            indicada, los clientes pasarán a recoger su compra y solo tendrás que
+                                            verificar
+                                            el recibo digital y entregarles la comida.</p>
+                                    </span>
+                                    <button class="leermas_btn" id="parrafoTex_btn2"><i
+                                            class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+
+                            </li>
+                            <li class="lista-negocio-info">
+                                <div class="pararfo-negocio-info">¿Cúanto cuesta?
+                                    <span class="parrafo" id="parrafoTex3">
+                                        <p class="parrafo-dentro">Registrarse en EquaFoods es gratis, no tendrás que
+                                            pagar nada a menos que
+                                            vendas comida a través de la plataforma. Cuando empieces a vender, te
+                                            cobraremos una
+                                            cuota anual y una pequeña comisión por cada Pack de Comida vendido (la
+                                            comisión
+                                            depende de lo que cobres por los Packs de Comida). Para más información,
+                                            ponte en
+                                            contacto con nuestro equipo.</p>
+                                    </span>
+                                    <button class="leermas_btn" id="parrafoTex_btn3"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li class="lista-negocio-info">
+                                <div class="pararfo-negocio-info">¿Comó cobraré?
+                                    <span class="parrafo" id="parrafoTex4">
+                                        <p class="parrafo-dentro">Trimestralmente te enviaremos el dinero que hayas
+                                            ganado con EquaFoods. Para
+                                            ello, solo tienes que facilitarnos los datos de tu cuenta bancaria a través
+                                            de
+                                            MyStore, desde la plataforma o desde nuestra app.</p>
+                                    </span>
+                                    <button class="leermas_btn" id="parrafoTex_btn4"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                            <li class="lista-negocio-info">
+                                <div class="pararfo-negocio-info">¿Tendre que usar mis propias bolsas o envases de
+                                    comida para llevar?
+                                    <span class="parrafo" id="parrafoTex5">
+                                        <p class="parrafo-dentro">Aunque animamos a los clientes a que lleven sus
+                                            propios recipientes y bolsas, a
+                                            menudo necesitan que el negocio les facilite una bolsa. Si ya dispones de
+                                            bolsas
+                                            o paquetes adecuados para este fin, puedes utilizarlos.</p>
+                                    </span>
+                                    <button class="leermas_btn" id="parrafoTex_btn5"><i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image-negocio-info">
+                        <img src="img/negocio1.jpg" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+        <!-- ================================= FOOTER ================================== -->
+        <footer>
+
+            <div class="container">
+
+                <div class="foo-row">
+
+                    <div class="foo-col">
+                        <ul>
+                            <li><a href="http://">Descarga la APP</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="negocio.html">Info-Negocio</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="redes">
+                        <a href=""><i class="lab la-facebook-square"></i></a>
+                        <a href=""><i class="lab la-instagram"></i></a>
+                        <a href=""><i class="lab la-youtube"></i></a>
+                        <a href=""><i class="lab la-twitter-square"></i></i></a>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </footer>
+
+
+        <!-- copyright -->
+        <div class="foo-copy">
+            <div class="container">
+                <p>EQUAFOODS 2023 © Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================= ANIMS AOS ================================= -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ================================= SCRIPT JS ================================= -->
+    <script src="js/negocio.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1100,
+        })
+
+    </script>
+
+</body>
+
+</html>
