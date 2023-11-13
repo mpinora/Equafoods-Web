@@ -12,6 +12,8 @@ function agregarProducto(nombre, precio) {
     // Actualizar el icono del carrito con la cantidad de productos
     const cantidadProductos = carrito.length;
     actualizarIconoCarrito(cantidadProductos);
+
+    cerrarPopup();
 }
 
 // Función para actualizar el icono del carrito con la cantidad de productos
@@ -43,3 +45,12 @@ function vaciarCarrito() {
     actualizarIconoCarrito(0);
 }
 
+function mostrarPopup() {
+    // Mostrar el modal
+    document.getElementById('myModal').style.display = 'flex';
+}
+
+function cerrarPopup() {
+    // Ocultar el modal
+    document.getElementById('myModal').style.display = 'none';
+}
