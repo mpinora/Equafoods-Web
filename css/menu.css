@@ -346,17 +346,17 @@
     text-align: left;
 }
 
-.price-and-rating {
+.priceyrating {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.pickup-time h4 {
+.recogida-time h4 {
     margin-bottom: 5px;
 }
 
-.about-establishment h4,
+.sobre-establecimiento h4,
 .important-info h4 {
     margin-top: 15px;
     margin-bottom: 5px;
