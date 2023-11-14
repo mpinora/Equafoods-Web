@@ -166,14 +166,14 @@
                                 <div class="precio">
                                     <span> $8.900</span>
                                 </div>
-                                <a class="ts-btn btn-primary uppercase" onclick="mostrarPopup('QBano', 'Pack de Comida', 'Recogida hoy: 10:00AM - 11:30AM', '4,6', '$8.900')">VER MÁS</a>
+                                <a class="ts-btn btn-primary uppercase" onclick="mostrarPopup('myModalQBano')">VER MÁS</a>
                             </div>
                         </div>
 
                         <!-- Modal -->
-                        <div id="myModal" class="modal">
+                        <div id="myModalQBano" class="modal">
                             <div class="modal-content">
-                                <h2>Pack de Comida - QBANO</h2>
+                                <h2>Pack de Comida rápida - QBANO</h2>
                                 <img class="modal-image" src="img/1.jpg" alt="">
                                 <div class="modal-details">
                                     <div class="priceyrating">
@@ -197,8 +197,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Comida rápida (QBano)', 8900)">RESERVAR</a>
-                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup()">CERRAR</button>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Comida rápida (QBano)', 8900); cerrarPopup('myModalQBano')">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalQBano')">CERRAR</button>
                             </div>
                         </div>
 
@@ -229,11 +229,42 @@
                                 <div class="precio">
                                     <span> $11.000</span>
                                 </div>
-                                <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Comida rápida (Frisby)', 11900)">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase" onclick="mostrarPopup('myModalFrisby')">VER MÁS</a>
                             </div>
 
                         </div>
+                        <!-- Modal -->
+                        <div id="myModalFrisby" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Comida rápida - FRISBY</h2>
+                                <img class="modal-image" src="img/3.jpg" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$11.000</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,0</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>12:00PM - 2:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>Frisby se ha convertido en la marca líder de pollo frito en Colombia. Este pack de comida puede incluir Pollo apanado, Pollo BBQ, Ensaladas y/o Frisdelicias.</p>
+                                        <span class="filtro-food">Restaurantes y preparados</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Comida rápida (Frisby)', 11000)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalFrisby')">CERRAR</button>
+                            </div>
+                        </div>
+
 
                         <div class="product-item">
                             <div class="p-portada">
@@ -263,10 +294,42 @@
                                     <span> $9.900</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Comida rápida (Papa Johns)', 9900)">RESERVAR</a>
+                                onclick="mostrarPopup('myModalPapaJ')">VER MÁS</a>
                             </div>
 
                         </div>
+                        <!-- Modal -->
+                        <div id="myModalPapaJ" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Comida rápida - Papa John's</h2>
+                                <img class="modal-image" src="img/propapajohns.png" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$9.900</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,2</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>5:30PM - 7:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>Papa Johns. Mejores ingredientes, Mejor pizza. Este pack de comida puede incluir Pizza, Papadias y/o Acompañamientos.</p>
+                                        <span class="filtro-food">Restaurantes y preparados</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Comida rápida (Papa Johns)', 11000)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalPapaJ')">CERRAR</button>
+                            </div>
+                        </div>
+
 
                         <div class="product-item">
                             <div class="p-portada">
@@ -296,10 +359,42 @@
                                     <span> $10.900</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Comida rápida (El Corral)', 10900)">RESERVAR</a>
+                                onclick="mostrarPopup('myModalCorral')">VER MÁS</a>
                             </div>
 
                         </div>
+                        <!-- Modal -->
+                        <div id="myModalCorral" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Comida rápida - El Corral</h2>
+                                <img class="modal-image" src="img/6.jpg" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$10.900</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,1</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>11:30AM - 5:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>Disfruta del delicioso sabor ¡La Receta Original!. Este pack de comida puede incluir Hamburguesas, Perros calientes, Ensaladas, Wraps y/o Papas a la francesa,</p>
+                                        <span class="filtro-food">Restaurantes y preparados</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Comida rápida (El Corral)', 10900)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalCorral')">CERRAR</button>
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -339,9 +434,41 @@
                                     <span> $10.900</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de mercado (Surtimax)', 10900)">RESERVAR</a>
+                                onclick="mostrarPopup('myModalSurtimax')">VER MÁS</a>
                             </div>
 
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModalSurtimax" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Mercado - Surtimax</h2>
+                                <img class="modal-image" src="img/2.jpg" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$10.900</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,1</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>10:30AM - 5:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>En Surtimax encuentras todo lo que necesitas para hacer tu mercado completo, con ahorro, calidad y confianza. Este pack de Mercado incluye Frutas y Verduras como: Frutas ácidas, Frutas semiácidas, Frutas dulces, Frutas neutras
+                                            y/o Hortalizas, Verduras de bulbo, Verduras de raíz, Hortalizas crucíferas</p>
+                                        <span class="filtro-food">Frutas y Verduras</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Mercado F&V (Surtimax)', 10900)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalSurtimax')">CERRAR</button>
+                            </div>
                         </div>
 
                         <div class="product-item">
@@ -372,9 +499,41 @@
                                     <span> $11.900</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Mercado (D1)', 11900)">RESERVAR</a>
+                                onclick="mostrarPopup('myModalD1')">VER MÁS</a>
                             </div>
 
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModalD1" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Mercado - Tiendas D1</h2>
+                                <img class="modal-image" src="img/profrescos1.png" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$11.900</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,5</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>9:30AM - 2:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>En Tiendas D1, ¡si lo quieres lo tienes! Este pack de Mercado incluye productos frescos como: Pollo, Carne de hamburguesa de
+                                            res/pollo, Chorizo, Jamón, Mortadela, Salchicha, Salchichón y/o Productos lácteos</p>
+                                        <span class="filtro-food">Productos frescos</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Mercado frescos (D1)', 11900)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalD1')">CERRAR</button>
+                            </div>
                         </div>
 
                         <div class="product-item">
@@ -405,9 +564,45 @@
                                     <span> $12.000</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Mercado (Tiendas ARA)', 12000)">RESERVAR</a>
+                                    onclick="mostrarPopup('myModalAra')">VER MÁS
+                                </a>
                             </div>
 
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModalAra" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Mercado - Tiendas Ara</h2>
+                                <img class="modal-image" src="img/13.jpg" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$12.000</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,1</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>8:30AM - 4:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>Encuentra las mejores ofertas y productos del mercado con la calidad que tu familia merece. 
+                                            Este pack de Mercado incluye productos de despensa como: Aceite, Mantequilla, 
+                                            Huevo, Salsas, Condimentos, Arroz, Azúcar y/o entre otros.
+                                        
+                                        </p>
+                                        <span class="filtro-food">Productos de despensa</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Mercado despensa (Ara)', 12000)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalAra')">CERRAR</button>
+                            </div>
                         </div>
 
                         <div class="product-item">
@@ -439,10 +634,46 @@
                                     <span> $13.900</span>
                                 </div>
                                 <a class="ts-btn btn-primary uppercase"
-                                    onclick="agregarProducto('Pack de Mercado (Éxito)', 12000)">RESERVAR</a>
+                                    onclick="mostrarPopup('myModalOlimpica')">VER MÁS
+                                </a>
 
                             </div>
 
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModalOlimpica" class="modal">
+                            <div class="modal-content">
+                                <h2>Pack de Mercado - Olimpica</h2>
+                                <img class="modal-image" src="img/profrescos1.png" alt="">
+                                <div class="modal-details">
+                                    <div class="priceyrating">
+                                        <span class="price"><h4>$13.900</h4></span>
+                                        <span class="rating"><i class="las la-star star-rating"></i>4,6</span>
+                                    </div>
+                                    <div class="recogida-time">
+                                        <h4>Recogida hoy:</h4>
+                                        <p>9:30AM - 1:30PM <span class="today-time">Hoy</span></p> 
+                                    </div>
+                                    <div class="sobre-establecimiento">
+                                        <h4>Sobre el establecimiento</h4>
+                                        <p>Encuentra en Olímpica las mejores ofertas y promociones del mercado.
+                                            Este pack de Mercado incluye productos frescos como: Pollo, Carne de hamburguesa de
+                                            res/pollo, Chorizo, Jamón, Mortadela, Salchicha, Salchichón y/o Productos lácteos
+                                        
+                                        </p>
+                                        <span class="filtro-food">Productos frescos</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <h4>Información importante</h4>
+                                        <p>El establecimiento te proporcionará el recipiente para
+                                            tu comida, pero te recomendamos que lleves tu propia 
+                                            bolsa para llevarte el pack a casa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="ts-btn btn-primary uppercase" onclick="agregarProducto('Pack de Mercado frescos (Olimpica)', 13900)">RESERVAR</a>
+                                <button class="ts-btn btn-primary uppercase" onclick="cerrarPopup('myModalOlimpica')">CERRAR</button>
+                            </div>
                         </div>
 
                     </div>

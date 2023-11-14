@@ -45,12 +45,12 @@ function vaciarCarrito() {
     actualizarIconoCarrito(0);
 }
 
-function mostrarPopup() {
+function mostrarPopup(id) {
     // Mostrar el modal
-    document.getElementById('myModal').style.display = 'flex';
+    document.getElementById(id).style.display = 'flex';
 }
 
-function cerrarPopup() {
+function cerrarPopup(id) {
     // Ocultar el modal
-    document.getElementById('myModal').style.display = 'none';
+    document.getElementById(id).style.display = 'none';
 }
