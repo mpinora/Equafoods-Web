@@ -10,16 +10,16 @@
 .container-descarga-app {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-    overflow: hidden; /* Para que la imagen no se desborde del contenedor */
-    text-align: center; /* Centra el contenido */
-    color: var(--color-footer); /* Ajusta el color del texto según tu diseño */
+    height: 100vh; 
+    overflow: hidden;
+    text-align: center; 
+    color: var(--color-footer);
 }
 
 .container-descarga-app img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    object-fit: cover;
 }
 
 .lado-app {
@@ -28,7 +28,7 @@
     left: 25%;
     transform: translate(-50%, -50%);
     padding: 0 0px 390px 0px;
-    border-radius: 10px; /* Bordes redondeados para el contenedor del texto */
+    border-radius: 10px;
 }
 .span-app{
     font-size: 92px;
@@ -57,6 +57,9 @@
 }
 .playstore-img1{
     margin-right: 20px;
+}
+.playstore img{
+    width: 230px;
 }
 .h2-app{
     font-size: 92px;

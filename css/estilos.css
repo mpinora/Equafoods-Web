@@ -191,6 +191,7 @@ img {
 
 }
 
+
 .icon-user {
     background-color: transparent;
     font-size: 30px;
@@ -300,6 +301,7 @@ img {
     padding: 10px;
     border-radius: 5px;
     font-size: 17px;
+    
 }
 
 .text-overlay3 {
@@ -375,6 +377,13 @@ img {
 }
 .title-light {
     color: #fdf3a7;
+}
+
+.title-h2-span1{
+    color: var(--color-fondo);
+}
+.title h2:hover{
+    text-decoration: underline ;
 }
 
 .promo-list {
@@ -564,11 +573,15 @@ img {
     margin-top: 70px;
     background-color: transparent;
 }
-.button1{
+.button1_2{
     background-color:darksalmon;
+    color: var(--color-fondo);
     border-radius: 30px;
-    padding: 15px;
+    padding: 15px 45px;
     margin-right: 10px;
+}
+.button1_2:hover{
+    background-color:rgb(255, 184, 160);
 }
 .button2{
     background-color: var(--color-principal);
@@ -675,6 +688,7 @@ img {
 
 /* Footer ***************************************************** */
 
+/*
 footer {
     background: #151515;
     padding: 40px 0px;
@@ -801,7 +815,123 @@ footer .foo-row .redes img {
 footer .foo-row .redes i:hover {
     animation: up 300ms alternate infinite cubic-bezier(.2, .65, .6, 1);
 }
+*/
+footer {
+    background: #151515;
+    padding: 40px 0;
+}
 
+footer .foo-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foo-col {
+    width: 30%; /* Ajusta según sea necesario */
+    color: #E3E3E3;
+}
+
+footer .foo-col h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer .foo-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .foo-col ul li {
+    margin-bottom: 16px;
+}
+
+footer .foo-col ul li a {
+    color: #E3E3E3;
+    font-size: 15px;
+}
+
+footer .foo-col ul li a:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+footer form .f-input {
+    margin-bottom: 16px;
+}
+
+footer form .f-input input {
+    width: calc(100% - 50px);
+    display: block;
+    padding: 16px 15px;
+    background: #2C2B2B;
+    border: none;
+    font-size: 15px;
+    border-radius: 25px;
+    outline: 0;
+    color: #A7A1A1;
+}
+
+footer form .f-input .ts-btn-round {
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+footer .foo-copy {
+    background: var(--color-footer);
+    padding: 20px 0;
+}
+
+footer .foo-copy p {
+    text-align: center;
+    color: var(--color-fondo);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .foo-row .redes {
+    color: var(--color-primary-hover);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 45px;
+}
+
+footer .foo-row .redes i {
+    margin-right: 12px;
+}
+
+footer .foo-row .redes a {
+    color: var(--color-primary-hover);
+}
+
+footer .foo-row .redes img {
+    height: 40%;
+    background-color: var(--color-primary-hover);
+}
+
+footer .foo-row .redes i:hover {
+    animation: up 300ms alternate infinite cubic-bezier(.2, .65, .6, 1);
+}
+
+.foo-copy{
+    text-align: center;
+}
+.foo-col-priv{
+    color: var(--color-fondo);
+}
+.foo-col-priv:hover{
+    color: var(--color-principal);
+}
+.hr-footer{
+    border-top: 1px solid var(--color-principal);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
 
 /* RESPOSIVE ***************************************************** */
 

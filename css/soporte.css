@@ -1,0 +1,134 @@
+:root {
+    --color-principal: #279991;
+    --color-primary-hover: #279991;
+    --color-verde: #04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+*,
+::after,
+::before{
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+.ts-contacto {
+    padding: 80px 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fondo);
+    color: var(--color-footer);
+    margin-bottom: 50px;
+}
+
+.ts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alineación de los elementos en el espacio entre ellos */
+}
+.text-soporte-title{
+    margin-bottom: 50px;
+}
+.text-soporte-title h2{
+    text-align: center;
+    font-size: 40px;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+.text-soporte-title p{
+    text-align: center;
+}
+.ts-formulario {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ts-formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ts-formulario input,
+.ts-formulario select,
+.ts-formulario textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+.ts-formulario input[type="submit"] {
+    background-color: white;
+    border: 2px solid var(--color-principal);
+    color: var(--color-principal);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ts-formulario input[type="submit"]:hover {
+    background-color: var(--color-principal);
+    color: white;
+}
+fieldset{
+    display: block;
+    border-style: none;
+}
+
+
+
+.ts-info-contacto {
+    flex: 1; 
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.ts-info-contacto h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.ts-info-contacto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#privacy-checkbox {
+    display: flex;
+    margin-right: 0px;
+    width: 50px;
+}
+
+
+#privacy-checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content-privacidad-soporte{
+    margin-bottom: 20px;
+
+}
+.vinculo-privacidad-soporte{
+    text-decoration: none;
+    color: var(--color-footer);
+}
+.vinculo-privacidad-soporte:hover{
+    color: var(--color-principal);
+}

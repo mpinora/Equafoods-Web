@@ -97,3 +97,11 @@ button[onclick^="agregarProducto"]:hover {
     font-size: 2em;
     margin-right: 10px;
 }
+
+/*Footer - corregir error en el carrito*/
+footer .foo-col h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--color-fondo);
+}
