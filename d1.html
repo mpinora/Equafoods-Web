@@ -53,17 +53,24 @@
                     <nav class="ts-menu">
                         <ul class="navbar-nav">
                             <li><a href="descarlalaap.html">Descarga la APP</a></li>
-                            <li class="nav-item dropdown"><a href="index.html" class="nav-link">Inicio</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="menu.html" class="nav-link">Menu</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link">Info-adicional</a>
+                                <div class="dropdown-content">
+                                    <a href="nosotros.html">Nosotros</a>
+                                    <a href="soporte.html">Soporte/Contacto</a>
+                                    <a href="https://forms.gle/xbfzo1vXGn2AmCWe6" target="_blank">PQRS</a>
+                                </div>
+                            </li>
                             <li><a href="negocio.html">Negocio-info</a></li>
                         </ul>
 
 
                         <div class="ts-icon-cart">
-                            <a href="#">
+                            <a onclick="irAlCarrito()">
                                 <i class="las la-shopping-cart"></i>
-                                <span>0</span>
+                                <span id="cantidad-productos">0</span>
                             </a>
                         </div>
 
@@ -166,7 +173,8 @@
                                 <div class="precio">
                                     <span> $5.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 5900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -197,7 +205,8 @@
                                 <div class="precio">
                                     <span> $15.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 15900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -228,7 +237,8 @@
                                 <div class="precio">
                                     <span> $11.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 11900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -259,7 +269,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -293,7 +304,8 @@
                                 <div class="precio">
                                     <span> $10.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 10900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -327,7 +339,8 @@
                                 <div class="precio">
                                     <span> $9.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR</a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 9900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -361,8 +374,8 @@
                                 <div class="precio">
                                     <span> $8.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR
-                                </a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 8900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -396,8 +409,8 @@
                                 <div class="precio">
                                     <span> $12.900</span>
                                 </div>
-                                <a href="" class="ts-btn btn-primary uppercase">RESERVAR
-                                </a>
+                                <a class="ts-btn btn-primary uppercase"
+                                    onclick="agregarProducto('Pack de Mercado (Tiendas D1)', 12900)">RESERVAR</a>
                             </div>
 
                         </div>
@@ -599,6 +612,7 @@
 
     <!-- ================================= SCRIPT JS ================================= -->
     <script src="js/app2.js"></script>
+    <script src="js/carrito.js"></script>
 
     <script>
 
